@@ -1,6 +1,6 @@
 ---
-import Layout from "../../layouts/BlogPost.astro";
-import { getBlogs, getBlogDetail } from "../../library/microcms";
+import Layout from "../layouts/BlogPost.astro";
+import { getBlogs, getBlogDetail } from "../library/microcms";
 
 export async function getStaticPaths() {
   const response = await getBlogs({ fields: ["id"] });
